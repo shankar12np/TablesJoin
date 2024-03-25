@@ -24,4 +24,6 @@ public class Computers {
     @OneToMany(mappedBy = "computers", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<ComputerDetails> computerDetails = new ArrayList<>();
 
+
+
 }
