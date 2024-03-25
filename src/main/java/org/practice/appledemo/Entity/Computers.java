@@ -20,8 +20,7 @@ public class Computers {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "engineer_id")
-    private SoftwareEngineers softwareEngineers; // Assuming "software_engineer_id" is the actual column name
-
+    private SoftwareEngineers softwareEngineers;
     @OneToMany(mappedBy = "computers", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<ComputerDetails> computerDetails = new ArrayList<>();
 
